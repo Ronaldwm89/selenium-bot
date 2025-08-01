@@ -1,0 +1,23 @@
+# Archivos temporales de Python
+__pycache__/
+*.pyc
+
+# Variables de entorno
+.env
+.env.*
+
+# Archivos de log
+*.log
+
+# Archivos de bases de datos temporales
+*.sqlite3
+
+# Archivos del editor
+.vscode/
+.idea/
+
+# Archivos del sistema operativo
+.DS_Store
+
+# Ejecutables del navegador
+chromedriver.exe
