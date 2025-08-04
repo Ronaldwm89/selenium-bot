@@ -19,7 +19,8 @@ for event in upcoming_events:
     diccionario = {i: {'time': fecha.text, 'name': events.text} for i, (fecha, events) in enumerate(zip(fecha, events))}
     print(diccionario)#
 
-
+click_more = driver.find_element(By.LINK_TEXT, 'More')
+click_more.click()#
 
 #precio = driver.find_element(By.CLASS_NAME, "a-price-whole")
 #centimos = driver.find_element(By.CLASS_NAME, "a-price-fraction")#
