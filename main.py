@@ -16,22 +16,9 @@ for event in upcoming_events:
     fecha = event.find_elements(By.TAG_NAME, 'time')
     events = event.find_elements(By.CSS_SELECTOR, 'li a')
 
-
-    #{indice: valor for indice, valor in enumerate(["a", "b", "c"])} # → {0: "a", 1: "b", 2: "c"}
-    #{clave: valor for elemento in iterable}
-    #{i: {'letra': letra, 'codigo': ord(letra)} for i, letra in enumerate(['a', 'b', 'c'])}
-
     diccionario = {i: {'time': fecha.text, 'name': events.text} for i, (fecha, events) in enumerate(zip(fecha, events))}
     print(diccionario)#
- 
-'''time = driver.find_elements(By.XPATH, '//*[@id="content"]/div/section/div[2]/div[2]/div/ul/li[1]/time')
 
-times = driver.find_elements(By.TAG_NAME, 'time')
-for t in times:
-    print(t.text)  # Prints the datetime attribute of each time element
-
-
-'''
 
 
 #precio = driver.find_element(By.CLASS_NAME, "a-price-whole")
